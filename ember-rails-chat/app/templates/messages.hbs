@@ -1,1 +1,6 @@
-{{outlet}}
+
+{{#each model as |msg|}}
+  <div class="msg-container well">
+    {{msg.body}}
+  </div>
+{{/each}}
